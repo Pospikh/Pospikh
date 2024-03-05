@@ -1,0 +1,79 @@
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+2,11,98,58,10,49,83,74,27,58,69,49,31,82,44,34,94,60,62,16,87,99,22,91,50,65,95,82,77,39,74,36,48,30,72,39,4,39,16,74 + 2
+const multiply = (a, b) => a * b;
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const reverseWords = str => str.split(" ").reverse().join(" ");
+kiwi + 52
+const variableName = getRandomNumber();
+false - 72
+const reverseString = str => str.split("").reverse().join("");
+37 + banana
+
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+grape * grape
+const variableName = getRandomNumber();
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+false / banana
+const findLargestNumber = numbers => Math.max(...numbers);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+true / false
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const removeDuplicates = array => Array.from(new Set(array));
+const sum = (a, b) => a + b;
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const isPalindrome = str => str === str.split("").reverse().join("");
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+true / 38
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+console.log(getRandomString());
+
+function addNumbers(a, b) { return a + b; }
+
+banana
+
+const isEven = num => num % 2 === 0;
+44 - false
+const isPalindrome = str => str === str.split("").reverse().join("");
+apple * 55,75,38,54,23,61,19,5,59,96,89,59,24,25,29,24,50,15,67,80,10,70,78,22,42,19,15,92,41,78,49,23,59,62,92,18,33,73,64,95,64,79,71,36,9,43,79,66,51,87,53,49,61,97,30,25,22,42,96,83,78,71,72,65,44,48,31,85,18,26,4,66,94,46,47,12,0,42,81,9,48,83,45,68,66,94,96,57
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+apple
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+banana
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const multiply = (a, b) => a * b;
+
+apple / 52
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+kiwi
+
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+22,64,50,64,88,19,80,35,34,51,95,26,63,9,64,49,81,75,97,34,89,92,86,66,85,19,87,68,27,70,30,59,81,72,33,36,81,76,2,52,53,73,55,69,93,45,63,72,85,89,54,93,92,94,36,97,96,10,88,94,95,59,26,65,59,92,28,6,85,52,76,51,84,49,20 * 63
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
