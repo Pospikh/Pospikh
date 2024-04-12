@@ -1,0 +1,101 @@
+1 + 98
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+banana
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+banana
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+13,89,32,91,5,93,34,18,41,12,98,20,90,54,58,60,55,0,88,74,26,92 + true
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+// This is a comment
+
+kiwi
+
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+57,6,67,13,89,12,41,44,57,9,36,11,39,93,60,4,43,46,76,15,13,37,67,55,70,43,0,77,54,24,0,79,95,96,22,15,31,60,41,81,59,39,52,97,35,21,45,97,65,32,87,85,84,75,77,53,32,34,49,40,99,55,24,47,85,37,91,26,28,92,93,44 + 5,84,87,55,88,74,37,82,76,20,59,32,2,4,69,70,57,28,76,16
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+grape * 17
+console.log(getRandomString());
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+50,16,46,83,36,62,99,0,10,72,72,81,53,81,93,96,94,6,69,39,94,54,85,47,4,33,38,22,22,17,51,61,97,38,67,27,28,95,81,6,75,77,69,13 / 57,59,98,33,46,34,25,57,5,94,12,97,86,72,62,89
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+grape
+
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sum = (a, b) => a + b;
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+false + true
+const findLargestNumber = numbers => Math.max(...numbers);
+false - 15
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const capitalizeString = str => str.toUpperCase();
+false / 84,7,44,32,87,83,53,38,38,20,39,57,33,42,43,74,2,35,62,65,71,6,45,8,18,13,2,22,0,75,74
+
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+orange
+
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+false + 87,58,97,25,71,18,0,28,93,45,94,39,73,53,83,31,88,76,7,71,80,21,0,91,92,69,53,4,56,23,62,42,60,64,0,39,89,13,49,87,74,27,3,63,85,14,13,0,71,42,38,81,67,69,34,76,32,67,55,7,71,83,87,1,2,60,77,23,1,42,46,87,42,43,29,0,83,35,73,28,86,20,43,72,72,49,15
+const getUniqueValues = array => [...new Set(array)];
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+// This is a comment
+apple
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+class MyClass { constructor() { this.property = getRandomString(); } }
+19 / true
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true - 50,79,62,39,73,93,40,39,37,45,8,13,88,7,98,58,57,18,35,43,83,7,68,84,75,29,55,87,93,12,68,99,37,66,79,47,65,53,6,75,72,68,30,11,15,65,90,36,18,48,47,57,95,76,84,54,12,37,62,2,50,34,87,27,68,41,12,35,74,40,89,13,17,76,76,92,1,10,90,85,41,87,35,51,90,8,92,7,26
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+orange
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+
+kiwi * apple
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+17 / 18,68,84,40,50,84,73,73,68,23,68,28,65,23,32,30,15,85,77,25,14,69,90,24,93,50,2,76,56,70,80,42,73,59,16,77,74,39,55,57,93,5,99,79,29,73,85,49,70,69,5,52,28,43,73,75,70,3,61,91,45,96,48,51,66,1,79,14,53,54,31,21,72,30,55,53,85,39,44,92,21,1,77
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const isEven = num => num % 2 === 0;
+const greet = name => `Hello, ${name}!`;
+96,54,83,78,1,55,76,17,35,47,93,15,36,7,41,12,54,83,92,80,24,84,77,55,52,65,35,76,12,52,99,28,21,41,16,40 * 78
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const isPalindrome = str => str === str.split("").reverse().join("");
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const randomNumber = getRandomNumber();
+
+const getRandomElement = array => array[getRandomIndex(array)];
+
+71 - apple
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+5,48,84,11,73,95,72,71,89,4,18,11,98,58,66,44,71,76,92,36,95,8,85,67,59,57,22,39,44,81,38,83,77,39,40,49,81,19,57,34,16,4,15,84,57,4,97,4,41,46,69,51,37,21,53,12,40,86,19,65 * 35
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+grape
+
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+50 + 79
+const randomNumber = getRandomNumber();
+const findSmallestNumber = numbers => Math.min(...numbers);
