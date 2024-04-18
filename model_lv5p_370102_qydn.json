@@ -1,0 +1,9 @@
+const greet = name => `Hello, ${name}!`;
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+
+7,52,68,84,99,70,24,79,57,21,55,8,71,14,29,29,61,73,75,36,36,53,86,49,88,82,28,46,65,67,99,89,84,1,25,31,90,95,69,56,8,31,12,6,72,11,45,86,97,32,2,89,3,85,97,89,68,34,8,56,21,30,68,62,8,25,96,59,15,36,28,8,35,6,99,72,23,39,16,15,66,41,88,62,3,90,6,32,90,20,67,39,29 + kiwi
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+banana
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
